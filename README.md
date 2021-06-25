@@ -1,3 +1,6 @@
+# Folder Explanations
+## Code
+The code folder contains the final notebook which is 
 # Bias in O/U Lines for MLB
  
 ## Introduction
@@ -7,6 +10,11 @@ As with other wager types, a sportsbook will set a 'line' that, based on their o
  
  Most gambling research focuses on finding a better prediction for the total runs.  While much of the inputs will be similiar, this project instead looks to predict when the book's estimation is too low (i.e. when the OVER bet wins).  
 
+## Generalized Model
+In theory, I suspect that a bookmakers' bias can be affected by four aspects of given baseball game: the quality of pitching and batting of both teams.  The first step of this project therefore was to find statistics that would best approximate these aspects.  Obviously, these stats needed to be available before the specific game begins so historical data was the most practical solution.  Ideally, the data would include all information up to the start of a given game.  
+
+For pitching
+ 
  ## Data
  ### Sources
  Finding historical data for MLB games was surprisingly difficult--from what I found no legitimate sportsbook publishes such data.  However, through other research citations, I was able to find a website, [Sportsbook Review Online](https://www.sportsbookreviewsonline.com/scoresoddsarchives/mlb/mlboddsarchives.htm), which provides such data for all sports, including MLB going back to 2010.  For all other data, I relied on [Baseball-Reference](Baseball-Reference.com) which is widely-recognized as the most reliable and granular resource for all things MLB.
@@ -14,9 +22,11 @@ As with other wager types, a sportsbook will set a 'line' that, based on their o
 ### Collection
 The gambling data was easily retrieved by downloading excel files directly from the website.  These files, of course, included Over/Under opening & closing lines and odds along with other gambling data.  They also provided data about the matchup--Home & Away team and pitchers--and the runs scored by each team.
 
-Data from Baseball-Reference was a bit more difficult to retrieve.  Some data--specifically team annual statistics--was easily downloaded.  Game-by-Game statistics and player-specific metrics had to be retrieved through webscrapping.  Fortunately, the website follows strict templates so once one type of page was succesfully scrapped, it was just a matter of iteration to collect the rest.  
+Data from Baseball-Reference was a bit more difficult to retrieve.  Some data--specifically team annual statistics--was easily downloaded.  Game-by-Game statistics and player-specific metrics had to be retrieved through webscrapping.  Fortunately, the website follows strict templates so once one type of page was succesfully scrapped, it was just a matter of iterating to collect the rest.  
 
 (It is worth noting that at the last hour, I discovered a not-widely-advertised API for some of the data of interest.)
+
+## Database
 
 
  
