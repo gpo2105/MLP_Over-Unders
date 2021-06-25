@@ -42,8 +42,6 @@ Data from Baseball-Reference was a bit more difficult to retrieve.  Some data--s
 
 (It is worth noting that at the last hour, I discovered a not-widely-advertised API for some of the data of interest.)
 
-## Database
-
 
  
 
